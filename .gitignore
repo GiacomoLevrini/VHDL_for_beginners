@@ -1,0 +1,5 @@
+#binary and exacutable
+*.cf 
+*.exe
+*.vcd
+
