@@ -16,9 +16,11 @@ A VHDL project development is divided into 4 phases:
 The last two parts of the project development may be done only if a physical hardware is present, maybe even with more sofisticated programs. I am currently learning how to develop complete hardware designs in [Vivado](https://www.xilinx.com/products/design-tools/vivado.html), but since it is required a licence and specially the program size is quite huge, only the first two steps will be developed with a free and easy-to-handle tool.
 
 #### GHDL installation and compiler 
+First of all, I strong suggest to use a Linux based bash. There is no need to install a Virtual machine: if you are using Windows 10 you may install WLS2 (lit. "Windows Subsystem for Linux 2"). There are few guides which can be followed online, i suggest you to  follow the one proposed by [Microsoft] (https://docs.microsoft.com/en-us/windows/wsl/install). If you already use a Unix-base system, you may find some probable mis-match in the directories or some commands, but it all can be fixed. If you accomplished this task, you may proceed. 
+
 There are many free compiler you can find online, but to execute the codes in this repository I suggest to use GHDL, which suits perfectly for the pourposes of this project. Beware, this software in not able to provide a Synthesis phase (thus no netlist will be produced).
 
-To install GHDL, your computer needs a GCC compiler, so before doing the following steps be sure to have a GCC compiler. If not, check out how to install it at this [link](https://linuxize.com/post/how-to-install-gcc-compiler-on-ubuntu-18-04/). 
+To install GHDL, your computer needs a GCC compiler, so before doing the following steps be sure to have a GCC compiler. If not, check out how to install it at this [link](https://linuxize.com/post/how-to-install-gcc-compiler-on-ubuntu-20-04/). 
 
 Once you are sure, you can go on. Here is a simple tutorial to install and compile in GHDL.
 From your power shell type the following lines to install and to clone the [GHDL](https://github.com/ghdl/ghdl) repository:
@@ -33,7 +35,7 @@ cd ghdl
 make
 sudo make install
 ```
-This commands should work on Unix systems (I personally use Ubuntu 18.04.4 and it works, but again, check the details for you operative system). For additional notes ad hints on installation please check the [GHDL-install](http://ghdl.free.fr/site/pmwiki.php?n=Main.Installation) site.
+This commands should work on Unix systems (I personally used Ubuntu 18.04.4 and it worked, I upgrade at Ubuntu 20.04 and it works, but again, check the details for you operative system). For additional notes ad hints on installation please check the [GHDL-install](http://ghdl.free.fr/site/pmwiki.php?n=Main.Installation) site.
 GHDL does not provide any graphical displayer, so to display the signals of the source code and of the test bench you have to install another free software for graphical visualization of the electronic signals [GKTwave](http://gtkwave.sourceforge.net/):```sudo apt-get install gtkwave```
 
 So far, if everything has been done correctly up to this point, you should now be able to used all the needed tools.
