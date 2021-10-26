@@ -26,7 +26,7 @@ Once you are sure, you can go on. Here is a simple tutorial to install and compi
 From your power shell type the following lines to install and to clone the [GHDL](https://github.com/ghdl/ghdl) repository:
 ```
 sudo apt update
-sudo apt-get update
+sudo apt-get upgrade
 sudo apt-get install build-essential
 sudo apt install -y git make gnat zlib1g-dev
 git clone https://github.com/ghdl/ghdl
